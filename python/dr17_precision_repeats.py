@@ -150,8 +150,8 @@ def mkhtml():
         lines += ['<td style="text-align:center">{:}</td>'.format(i+1)]
         lines += ['<td style="text-align:center">{:}</td>'.format(name)]
         width = 500
-        lines += ['<td><a href="plots/dr17_{:s}_feh_hist2d.png" target="_blank"><img src="plots/dr17_{:s}_feh_hist2d.png" width={:d}></a></td>'.format(name,name,width)]
-        lines += ['<td><a href="plots/dr17_{:s}_scatter_snr.png" target="_blank"><img src="plots/dr17_{:s}_scatter_snr.png" width={:d}></a></td>'.format(name,name,width)]
+        lines += ['<td><a href="plots/dr17_{:s}_feh_hist2d.png" target="_blank"><img src="plots/dr17_{:s}_feh_hist2d.png" width={:d}></a></td>'.format(name.lower(),name.lower(),width)]
+        lines += ['<td><a href="plots/dr17_{:s}_scatter_snr.png" target="_blank"><img src="plots/dr17_{:s}_scatter_snr.png" width={:d}></a></td>'.format(name.lower(),name.lower(),width)]
         lines += ['<td><a href="plots/dr17_precision_repeats_{:s}.png" target="_blank"><img src="plots/dr17_precision_repeats_{:s}.png" width={:d}></a></td>'.format(tags[i],tags[i],width)]
         lines += ['</tr>']
     lines += ['</table>']
